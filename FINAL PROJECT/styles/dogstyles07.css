@@ -1,0 +1,163 @@
+/* Author: Akib Rahman Sharmin Sultana
+   Date: October 10, 2024 */
+
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  
+  img {
+    max-width: 90%;
+    height: auto;
+    opacity: 0.9;
+  }
+  
+  /* Navigation */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #f4f4f4;
+  }
+  
+  /* Section, Article, and Aside Styles */
+  section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  article {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  aside {
+    background-color: #f4f4f4;
+    border-left: 4px solid #ddd;
+    padding: 10px;
+    margin: 20px 0;
+  }
+  
+  /* Figure and Figcaption */
+  figure {
+    border: 2px solid #ddd;
+    padding: 10px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  figcaption {
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  /* Multi-Column Layout */
+  .columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .columns {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Mobile-first approach */
+  .mobile {
+    display: block;
+  }
+  
+  .desktop {
+    display: none;
+  }
+  
+  /* Tablet Viewport */
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+      background: linear-gradient(to right, #e0f7fa, #80deea);
+    }
+  
+    .container {
+      width: 85%;
+      max-width: 960px;
+    }
+  
+    header {
+      font-size: 1.8em;
+    }
+  
+    nav ul li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+  
+    .mobile {
+      display: none;
+    }
+  
+    .desktop {
+      display: block;
+    }
+  }
+  
+  /* Desktop Viewport */
+  @media screen and (min-width: 1025px) {
+    body {
+      background: linear-gradient(to right, #bbfbe1, #27282a);
+    }
+  
+    .container {
+      width: 80%;
+      max-width: 1200px;
+    }
+  
+    nav ul li a:hover {
+      background-color: #42a5f5;
+      color: white;
+    }
+  
+    .mobile {
+      display: none;
+    }
+  
+    .desktop {
+      display: block;
+    }
+  }
+  
+  h1, h2 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
